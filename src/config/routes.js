@@ -9,6 +9,13 @@ const SignUp = lazy(() => import('../pages/SignUp/SignUp'))
 const PasswordReset = lazy(() => import('../pages/PasswordReset/PasswordReset'))
 const About = lazy(() => import('../pages/About'))
 const Home = lazy(() => import('../pages/Home/Home'))
+const News = lazy(() => import('../pages/News/News'))
+const Cardings = lazy(() => import('../pages/Cardings/Cardings'))
+const Gallery = lazy(() => import('../pages/Gallery/Gallery'))
+const Constitution = lazy(() => import('../pages/Constitution/Constitution'))
+const Directions = lazy(() => import('../pages/Directions/Directions'))
+const Popia = lazy(() => import('../pages/Popia/Popia'))
+const Contact = lazy(() => import('../pages/Contact/Contact'))
 const DialogDemo = lazy(() => import('../pages/DialogDemo/DialogDemo'))
 const ToastDemo = lazy(() => import('../pages/ToastDemo/ToastDemo'))
 const FilterDemo = lazy(() => import('../pages/FilterDemo'))
@@ -48,6 +55,41 @@ const routes = [
     path: '/about',
     exact: true,
     element: <About />,
+  },
+  {
+    path: '/news',
+    exact: true,
+    element: <News />,
+  },
+  {
+    path: '/cardings',
+    exact: true,
+    element: <Cardings />,
+  },
+  {
+    path: '/gallery',
+    exact: true,
+    element: <Gallery />,
+  },
+  {
+    path: '/constitution',
+    exact: true,
+    element: <Constitution />,
+  },
+  {
+    path: '/directions',
+    exact: true,
+    element: <Directions />,
+  },
+  {
+    path: '/popia',
+    exact: true,
+    element: <Popia />,
+  },
+  {
+    path: '/contact',
+    exact: true,
+    element: <Contact />,
   },
   {
     path: '/my_account',
