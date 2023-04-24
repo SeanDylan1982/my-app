@@ -14,7 +14,7 @@ export default function Constritution() {
         },
       }}
     >
-      <object title="Constitution_bye-laws" src="../../../public/docs/Northmead Constitution and Bye-Laws 2019 .pdf" style={{ width: 1000, height: 1200 }} />
+      <object data="../../../public/docs/Northmead Constitution and Bye-Laws 2019 .pdf" aria-label="constitution and bye-laws" type="application/pdf" width="100%" height="100%"></object>
     </Box>
   );
 }

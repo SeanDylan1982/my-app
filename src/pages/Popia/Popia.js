@@ -1,15 +1,12 @@
-import { Typography } from '@mui/material'
 import Page from 'material-ui-shell/lib/containers/Page'
 import React from 'react'
-import { useIntl } from 'react-intl'
+import Popia from 'components/Popia/Popia'
 
 const PopiaPage = () => {
-  const intl = useIntl()
 
   return (
-    <Page pageTitle={intl.formatMessage({ id: 'popia' })}>
-      <Typography>{intl.formatMessage({ id: 'popia' })}</Typography>
-      
+    <Page pageTitle='Popia | Northmead Bowling Club'>
+      <Popia />
     </Page>
   )
 }

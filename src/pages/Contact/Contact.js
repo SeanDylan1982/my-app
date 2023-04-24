@@ -1,15 +1,12 @@
-import { Typography } from '@mui/material'
 import Page from 'material-ui-shell/lib/containers/Page'
 import React from 'react'
-import { useIntl } from 'react-intl'
+import Contact from 'components/Contact/Contact'
 
 const ContactPage = () => {
-  const intl = useIntl()
 
   return (
-    <Page pageTitle={intl.formatMessage({ id: 'contact' })}>
-      <Typography>{intl.formatMessage({ id: 'contact' })}</Typography>
-      
+    <Page pageTitle='Contact | Northmead Bowling Club'>
+      <Contact />
     </Page>
   )
 }

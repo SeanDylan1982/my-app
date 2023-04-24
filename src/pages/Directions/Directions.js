@@ -1,15 +1,12 @@
-import { Typography } from '@mui/material'
 import Page from 'material-ui-shell/lib/containers/Page'
 import React from 'react'
-import { useIntl } from 'react-intl'
+import Directions from 'components/Directions/Directions'
 
 const DirectionsPage = () => {
-  const intl = useIntl()
 
   return (
-    <Page pageTitle={intl.formatMessage({ id: 'directions' })}>
-      <Typography>{intl.formatMessage({ id: 'directions' })}</Typography>
-      
+    <Page pageTitle='Directions | Northmead Bowling Club'>
+      <Directions />
     </Page>
   )
 }

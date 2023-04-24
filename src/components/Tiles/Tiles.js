@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
@@ -20,10 +20,10 @@ const Item = styled(Paper)(({ theme }) => ({
   color: theme.palette.text.secondary,
 }));
 
-const LandingPage = () => {
+export default function VariableWidthGrid() {
   return (
-    <Box sx={{ flexGrow: 1, position: 'relative', display: 'flex', flexDirection: 'column', margin: 15, padding: 5, marginTop: 5 }}>
-      <h1 style={{ fontSize: '3.5rem', marginTop: -40, marginBottom: 60, textAlign: 'center', color: 'rgba(0,0,0,0.8)' }}>Welcome to Northmead Bowling Club</h1>
+    <Box sx={{ flexGrow: 1, position: 'relative', display: 'flex', flexDirection: 'column', margin: 15, marginTop: 5 }}>
+      {/* <h1 style={{ fontSize: '3rem', marginTop: -40, marginBottom: 60, textAlign: 'center', color: 'rgba(0,0,0,0.8)' }}>Welcome to Northmead Bowling Club</h1> */}
       <Grid container spacing={1}>
         <Grid style={{ 
           position: 'relative',
@@ -371,6 +371,5 @@ const LandingPage = () => {
         </Grid>
       </Grid>
     </Box>
-  )
+  );
 }
-export default LandingPage

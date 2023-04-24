@@ -41,7 +41,7 @@ const SignIn = ({ redirectTo = '/' }) => {
   }
 
   return (
-    <Page pageTitle={intl.formatMessage({ id: 'sign_in' })}>
+    <Page pageTitle='Sign In | Northmead Bowling Club'>
       <CustomPaper elevation={6}>
         <div
           sytle={{

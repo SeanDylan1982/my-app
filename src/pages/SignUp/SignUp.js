@@ -42,15 +42,7 @@ const SignUp = ({ redirectTo = '/' }) => {
   }
 
   return (
-    <Page
-      pageTitle={intl.formatMessage({
-        id: 'sign_up',
-        defaultMessage: ' Sign up',
-      })}
-      onBackClick={() => {
-        navigate(-1)
-      }}
-    >
+    <Page pageTitle='Sign Up | Northmead Bowling Club'>
       <CustomPaper elevation={6}>
         <div
           className={{
