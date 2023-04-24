@@ -109,14 +109,14 @@ const MyAccount = () => {
 
           {photoURL && (
             <Avatar
-              style={{ width: 120, height: 120, marginTop: -40 }}
+              style={{ width: 150, height: 150, marginTop: -40 }}
               alt="User Picture"
               src={photoURL}
             />
           )}
           {!photoURL && (
             <Avatar
-              style={{ width: 120, height: 120, marginTop: -40 }}
+              style={{ width: 150, height: 150, marginTop: -40 }}
               alt="User Picture"
             >
               {displayName ? displayName[0].toUpperCase() : <PersonIcon />}

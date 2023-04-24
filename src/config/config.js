@@ -48,7 +48,7 @@ const config = {
   },
   theme: {
     themes,
-    defaultThemeID: 'default',
+    defaultThemeID: 'green',
     defaultIsDarkMode: false,
     defaultIsRTL: false, //change this to true for default Right to Left Language support
   },

@@ -1,14 +1,14 @@
 import { Button, TextField, Typography } from '@mui/material'
 import Page from 'material-ui-shell/lib/containers/Page'
 import React, { useState } from 'react'
-import { useAuth } from 'base-shell/lib/providers/Auth'
+import { useAuth } from 'base-shell/lib/providers/Auth/Provider'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useIntl } from 'react-intl'
 import { useMenu } from 'material-ui-shell/lib/providers/Menu'
 import { useTheme } from '@mui/material/styles'
 import CustomPaper from '../../components/CustomPaper'
 
-const SignUp = ({ redirectTo = '/' }) => {
+const SignUp = ({ redirectTo = '/SignUp' }) => {
   const intl = useIntl()
   const navigate = useNavigate()
   const location = useLocation()
@@ -23,8 +23,8 @@ const SignUp = ({ redirectTo = '/' }) => {
   function handleSubmit(event) {
     event.preventDefault()
     authenticate({
-      displayName: 'User',
-      email: username,
+      displayName: 'username',
+      email: 'userEmail',
     })
   }
 
@@ -84,10 +84,10 @@ const SignUp = ({ redirectTo = '/' }) => {
               margin="normal"
               required
               fullWidth
-              id="email"
+              id="userEmail"
               label={intl.formatMessage({
-                id: 'email',
-                defaultMessage: 'E-Mail',
+                id: 'userEmail',
+                defaultMessage: 'Email',
               })}
               name="email"
               autoComplete="email"

@@ -1,17 +1,19 @@
 import red from '@mui/material/colors/red'
 import green from '@mui/material/colors/green'
 import pink from '@mui/material/colors/pink'
+import purple from '@mui/material/colors/purple'
+import cyan from '@mui/material/colors/cyan'
 
 const themes = [
   {
     id: 'default',
   },
   {
-    id: 'red',
-    color: red[500],
+    id: 'purple',
+    color: purple[500],
     source: {
       palette: {
-        primary: red,
+        primary: purple,
         secondary: pink,
         error: red,
       },
@@ -23,7 +25,7 @@ const themes = [
     source: {
       palette: {
         primary: green,
-        secondary: pink,
+        secondary: cyan,
         error: red,
       },
     },

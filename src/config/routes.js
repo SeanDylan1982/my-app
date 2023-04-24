@@ -92,6 +92,46 @@ const routes = [
     element: <Contact />,
   },
   {
+    path: '/LandingPage',
+    exact: true,
+    element: <News />,
+  },
+  {
+    path: '/LandingPage',
+    exact: true,
+    element: <Cardings />,
+  },
+  {
+    path: '/LandingPage',
+    exact: true,
+    element: <Gallery />,
+  },
+  {
+    path: '/LandingPage',
+    exact: true,
+    element: <Constitution />,
+  },
+  {
+    path: '/LandingPage',
+    exact: true,
+    element: <Directions />,
+  },
+  {
+    path: '/LandingPage',
+    exact: true,
+    element: <Contact />,
+  },
+  {
+    path: '/LandingPage',
+    exact: true,
+    element: <Popia />,
+  },
+  {
+    path: '/LandingPage',
+    exact: true,
+    element: <SignUp />,
+  },
+  {
     path: '/my_account',
     exact: true,
     element: (

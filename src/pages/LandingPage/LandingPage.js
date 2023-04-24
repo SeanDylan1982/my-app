@@ -22,9 +22,10 @@ const Item = styled(Paper)(({ theme }) => ({
 
 const LandingPage = () => {
   return (
-    <Box sx={{ flexGrow: 1, position: 'relative', display: 'flex', flexDirection: 'column', margin: 15, padding: 5, marginTop: 5 }}>
+    <Box sx={{ flexGrow: 1, position: 'relative', display: 'flex', flexDirection: 'column', margin: 15, padding: 5, marginTop: 5, textDecoration: 'none' }}>
       <h1 style={{ fontSize: '3.5rem', marginTop: -40, marginBottom: 60, textAlign: 'center', color: 'rgba(0,0,0,0.8)' }}>Welcome to Northmead Bowling Club</h1>
       <Grid container spacing={1}>
+        <a href="/News">
         <Grid style={{ 
           position: 'relative',
           display: 'flex',
@@ -67,7 +68,9 @@ const LandingPage = () => {
               }}
             />
             </Paper>
-        </Grid>
+          </Grid>
+        </a>
+        <a href="/Cardings">
         <Grid style={{ 
           position: 'relative',
           display: 'flex',
@@ -110,7 +113,9 @@ const LandingPage = () => {
               }}
             />
             </Paper>
-        </Grid>
+          </Grid>
+        </a>
+        <a href="/Gallery">
         <Grid style={{ 
           position: 'relative',
           display: 'flex',
@@ -153,7 +158,9 @@ const LandingPage = () => {
               }}
             />
             </Paper>
-        </Grid>
+          </Grid>
+        </a>
+        <a href="/Constitution">
         <Grid style={{ 
           position: 'relative',
           display: 'flex',
@@ -196,7 +203,9 @@ const LandingPage = () => {
               }}
             />
             </Paper>
-        </Grid>
+          </Grid>
+        </a>
+        <a href="/Directions">
         <Grid style={{ 
           position: 'relative',
           display: 'flex',
@@ -239,7 +248,9 @@ const LandingPage = () => {
               }}
             />
             </Paper>
-        </Grid>
+          </Grid>
+        </a>
+        <a href="/Contact">
         <Grid style={{ 
           position: 'relative',
           display: 'flex',
@@ -282,7 +293,9 @@ const LandingPage = () => {
               }}
             />
             </Paper>
-        </Grid>
+          </Grid>
+        </a>
+        <a href="/Popia">
         <Grid style={{ 
           position: 'relative',
           display: 'flex',
@@ -325,7 +338,9 @@ const LandingPage = () => {
               }}
             />
             </Paper>
-        </Grid>
+          </Grid>
+        </a>
+        <a href="/Signin">
         <Grid style={{ 
           position: 'relative',
           display: 'flex',
@@ -368,7 +383,8 @@ const LandingPage = () => {
               }}
             />
             </Paper>
-        </Grid>
+          </Grid>
+        </a>
       </Grid>
     </Box>
   )
