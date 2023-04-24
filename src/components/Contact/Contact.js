@@ -87,11 +87,11 @@ export default function Contact() {
         </table>
       </Paper>
       <Paper elevation={6}>
-        <iframe
+        <object
           src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d1853.2867336870258!2d28.32212660978699!3d-26.174228827693916!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2sza!4v1671890179137!5m2!1sen!2sza"
           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
           id="tooltip-map-iframe">
-        </iframe>
+        </object>
       </Paper>
     </Box>
   );
