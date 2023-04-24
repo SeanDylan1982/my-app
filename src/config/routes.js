@@ -29,7 +29,7 @@ const routes = [
     exact: true,
     element: (
       <UnauthorizedRoute>
-        <SignIn redirectTo="/home" />
+        <SignIn redirectTo="/my_account" />
       </UnauthorizedRoute>
     ),
   },
@@ -38,7 +38,7 @@ const routes = [
     exact: true,
     element: (
       <UnauthorizedRoute>
-        <SignUp redirectTo="/home" />
+        <SignUp redirectTo="/signin" />
       </UnauthorizedRoute>
     ),
   },

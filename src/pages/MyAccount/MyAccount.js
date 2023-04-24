@@ -13,16 +13,16 @@ const MyAccount = () => {
 
   const { auth, updateAuth, setAuth } = useAuth()
   const {
-    photoURL: currentPhoroURL = '',
+    photoURL: currentPhotoURL = '',
     displayName: currentDisplayName = '',
     email = '',
   } = auth || {}
   const [displayName, setDisplayName] = useState(currentDisplayName)
-  const [photoURL, setPhotoURL] = useState(currentPhoroURL)
+  const [photoURL, setPhotoURL] = useState(currentPhotoURL)
   const [isImageDialogOpen, setImageDialogOpen] = useState(false)
 
   const hasChange =
-    displayName !== currentDisplayName || photoURL !== currentPhoroURL
+    displayName !== currentDisplayName || photoURL !== currentPhotoURL
 
   const handleImageChange = (image) => {
     setPhotoURL(image)
