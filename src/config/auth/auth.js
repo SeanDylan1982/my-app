@@ -2,8 +2,8 @@ const express = require('express');
 
 const { handleErrors } = require('./middlewares');
 const usersRepo = require('../../repositories/users');
-const signupTemplate = require('../../views/admin/auth/signup');
-const signinTemplate = require('../../views/admin/auth/signin');
+const signupTemplate = require('../templates/signup');
+const signinTemplate = require('../templates/signin');
 const {
   requireEmail,
   requirePassword,
@@ -24,7 +24,7 @@ router.post(
   handleErrors(signupTemplate),
   async (req, res) => {
     const { username, userEmail, password, passwordConfirm } = req.body;
-    const user = await usersRepo.create({ username, userEmail, password, passwordConfirm, timestamp() });
+    const user = await usersRepo.create({ username, userEmail, password, passwordConfirm });
 
     req.session.userId = user.id;
 

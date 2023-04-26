@@ -2,7 +2,7 @@ import { Button, TextField, Typography } from '@mui/material'
 import Page from 'material-ui-shell/lib/containers/Page'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { useAuth } from 'base-shell/lib/providers/Auth/Provider'
+import { useAuth } from 'base-shell/lib/providers/Auth'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useIntl } from 'react-intl'
 import { useMenu } from 'material-ui-shell/lib/providers/Menu'
@@ -29,6 +29,7 @@ const SignIn = ({ redirectTo = '/' }) => {
 
   const authenticate = (user) => {
     setAuth({ isAuthenticated: true, ...user })
+
     toggleThis('isAuthMenuOpen', false)
 
     let from = new URLSearchParams(location.search).get('from')
@@ -93,7 +94,7 @@ const SignIn = ({ redirectTo = '/' }) => {
               color="primary"
               style={{ margin: theme.spacing(3, 0, 2) }}
             >
-              {intl.formatMessage({ id: 'sign_in' })}
+              {intl.formatMessage({ id: 'sign_in', defaultMessage: 'Sign In'  })}
             </Button>
           </form>
 

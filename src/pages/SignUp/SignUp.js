@@ -1,14 +1,14 @@
 import { Button, TextField, Typography } from '@mui/material'
 import Page from 'material-ui-shell/lib/containers/Page'
 import React, { useState } from 'react'
-import { useAuth } from 'base-shell/lib/providers/Auth/Provider'
+import { useAuth } from 'base-shell/lib/providers/Auth'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useIntl } from 'react-intl'
 import { useMenu } from 'material-ui-shell/lib/providers/Menu'
 import { useTheme } from '@mui/material/styles'
 import CustomPaper from '../../components/CustomPaper'
 
-const SignUp = ({ redirectTo = '/SignUp' }) => {
+const SignUp = ({ redirectTo = '/' }) => {
   const intl = useIntl()
   const navigate = useNavigate()
   const location = useLocation()
@@ -30,6 +30,7 @@ const SignUp = ({ redirectTo = '/SignUp' }) => {
 
   const authenticate = (user) => {
     setAuth({ isAuthenticated: true, ...user })
+
     toggleThis('isAuthMenuOpen', false)
 
     let from = new URLSearchParams(location.search).get('from')
@@ -54,7 +55,7 @@ const SignUp = ({ redirectTo = '/SignUp' }) => {
           }}
         >
           <Typography component="h1" variant="h5">
-            {intl.formatMessage({ id: 'sign_up', defaultMessage: 'Sign up' })}
+            {intl.formatMessage({ id: 'sign_up', defaultMessage: 'Sign Up' })}
           </Typography>
           <form
             style={{ marginTop: theme.spacing(1) }}

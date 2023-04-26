@@ -4,7 +4,6 @@ import AuthorizedRoute from 'base-shell/lib/components/AuthorizedRoute'
 import UnauthorizedRoute from 'base-shell/lib/components/UnauthorizedRoute'
 
 const SignIn = lazy(() => import('../pages/SignIn/SignIn'))
-
 const SignUp = lazy(() => import('../pages/SignUp/SignUp'))
 const PasswordReset = lazy(() => import('../pages/PasswordReset/PasswordReset'))
 const About = lazy(() => import('../pages/About'))
@@ -54,82 +53,146 @@ const routes = [
   {
     path: '/about',
     exact: true,
-    element: <About />,
+    element: (
+      <UnauthorizedRoute>
+        <About />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/news',
     exact: true,
-    element: <News />,
+    element: (
+      <UnauthorizedRoute>
+        <News />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/cardings',
     exact: true,
-    element: <Cardings />,
+    element: (
+      <UnauthorizedRoute>
+        <Cardings />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/gallery',
     exact: true,
-    element: <Gallery />,
+    element: (
+      <UnauthorizedRoute>
+        <Gallery />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/constitution',
     exact: true,
-    element: <Constitution />,
+    element: (
+      <UnauthorizedRoute>
+        <Constitution />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/directions',
     exact: true,
-    element: <Directions />,
+    element: (
+      <UnauthorizedRoute>
+        <Directions />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/popia',
     exact: true,
-    element: <Popia />,
+    element: (
+      <UnauthorizedRoute>
+        <Popia />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/contact',
     exact: true,
-    element: <Contact />,
+    element: (
+      <UnauthorizedRoute>
+        <Contact />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/LandingPage',
     exact: true,
-    element: <News />,
+    element: (
+      <UnauthorizedRoute>
+        <News />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/LandingPage',
     exact: true,
-    element: <Cardings />,
+    element: (
+      <UnauthorizedRoute>
+        <Cardings />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/LandingPage',
     exact: true,
-    element: <Gallery />,
+    element: (
+      <UnauthorizedRoute>
+        <Gallery />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/LandingPage',
     exact: true,
-    element: <Constitution />,
+    element: (
+      <UnauthorizedRoute>
+        <Constitution />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/LandingPage',
     exact: true,
-    element: <Directions />,
+    element: (
+      <UnauthorizedRoute>
+        <Directions />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/LandingPage',
     exact: true,
-    element: <Contact />,
+    element: (
+      <UnauthorizedRoute>
+        <Contact />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/LandingPage',
     exact: true,
-    element: <Popia />,
+    element: (
+      <UnauthorizedRoute>
+        <Popia />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/LandingPage',
     exact: true,
-    element: <SignUp />,
+    element: (
+      <UnauthorizedRoute>
+        <SignUp />
+      </UnauthorizedRoute>
+    ),
   },
   {
     path: '/my_account',
@@ -144,9 +207,9 @@ const routes = [
     path: '/home',
     exact: true,
     element: (
-      <AuthorizedRoute>
+      <UnauthorizedRoute>
         <Home />
-      </AuthorizedRoute>
+      </UnauthorizedRoute>
     ),
   },
   {
