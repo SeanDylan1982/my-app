@@ -60,67 +60,44 @@ const routes = [
     ),
   },
   {
+    path: '/home',
+    exact: true,
+    element: <Home />,
+  },
+  {
     path: '/news',
     exact: true,
-    element: (
-      <UnauthorizedRoute>
-        <News />
-      </UnauthorizedRoute>
-    ),
+    element: <News />,
   },
   {
     path: '/cardings',
     exact: true,
-    element: (
-      <UnauthorizedRoute>
-        <Cardings />
-      </UnauthorizedRoute>
-    ),
+    element: <Cardings />,
   },
   {
     path: '/gallery',
     exact: true,
-    element: (
-      <UnauthorizedRoute>
-        <Gallery />
-      </UnauthorizedRoute>
-    ),
+    element: <Gallery />,
   },
   {
     path: '/constitution',
     exact: true,
-    element: (
-      <UnauthorizedRoute>
-        <Constitution />
-      </UnauthorizedRoute>
-    ),
+    element: <Constitution />,
   },
   {
     path: '/directions',
     exact: true,
-    element: (
-      <UnauthorizedRoute>
-        <Directions />
-      </UnauthorizedRoute>
-    ),
+    element: <Directions />,
   },
   {
     path: '/popia',
     exact: true,
-    element: (
-      <UnauthorizedRoute>
-        <Popia />
-      </UnauthorizedRoute>
-    ),
+    element: <Popia />,
   },
   {
     path: '/contact',
     exact: true,
-    element: (
-      <UnauthorizedRoute>
-        <Contact />
-      </UnauthorizedRoute>
-    ),
+    element: <Contact />,
   },
   {
     path: '/LandingPage',

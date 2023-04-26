@@ -23,8 +23,8 @@ const SignUp = ({ redirectTo = '/' }) => {
   function handleSubmit(event) {
     event.preventDefault()
     authenticate({
-      displayName: 'username',
-      email: 'userEmail',
+      displayName: 'User',
+      email: 'username',
     })
   }
 
